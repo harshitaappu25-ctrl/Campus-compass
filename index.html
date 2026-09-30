@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website fit phones, tablets and laptops -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Compass</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         SCREEN 1 - LOGO
+    ========================== -->
+    <section id="logoScreen" class="screen active">
+
+        <div class="logo-container">
+
+            <!-- We will put our generated Campus Compass logo here later -->
+          <img src="images/logo.png.jpeg" alt="Campus Compass Logo" class="campus-logo">
+          
+            <h1>Campus Compass</h1>
+
+            <p>Your Intelligent Campus Companion</p>
+
+            <button onclick="showScreen('welcomeScreen')">
+                Start Campus Compass
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SCREEN 2 - WELCOME
+    ========================== -->
+    <section id="welcomeScreen" class="screen">
+
+        <div class="content-card">
+
+            <h1>Welcome to</h1>
+
+            <h2>CB Bhandari Jain College</h2>
+
+            <p class="tagline">
+                Your Intelligent Campus Companion
+            </p>
+
+            <button onclick="showScreen('glanceScreen')">
+                Continue
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SCREEN 3 - COLLEGE AT A GLANCE
+    ========================== -->
+    <section id="glanceScreen" class="screen">
+
+        <div class="content-card">
+
+            <h1>College at a Glance</h1>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+                    <h3>Established</h3>
+                    <p>2000</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Affiliated To</h3>
+                    <p>Bangalore City University</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Location</h3>
+                    <p>Shankarapuram, Bengaluru</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Programs</h3>
+                    <p>B.Com, BBA, BCA, MBA</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Facilities</h3>
+                    <p>Labs, Library, Auditorium, Sports & Wi-Fi</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>College Hours</h3>
+                    <p>9:30 AM – 3:30 PM</p>
+                </div>
+
+            </div>
+
+            <button onclick="requestMicrophone()">
+                Continue to Campus Compass
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SCREEN 4 - MICROPHONE ACCESS
+    ========================== -->
+    <section id="microphoneScreen" class="screen">
+
+        <div class="content-card">
+
+            <div class="microphone-icon">🎤</div>
+
+            <h1>Microphone Access</h1>
+
+            <p>
+                Campus Compass uses your microphone to understand
+                your questions.
+            </p>
+
+            <p id="permissionMessage">
+                Please allow microphone access to continue.
+            </p>
+
+            <button onclick="requestMicrophone()">
+                Allow Microphone
+            </button>
+
+            <button
+                class="secondary-button"
+                onclick="continueWithoutMicrophone()">
+                Continue with Text
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SCREEN 5 - ASK CAMPUS COMPASS
+    ========================== -->
+    <section id="askScreen" class="screen">
+
+        <div class="content-card ask-card">
+
+            <h1>🎙️ Ask Campus Compass</h1>
+
+            <p>
+                Ask your question naturally.
+            </p>
+
+            <!-- Microphone button -->
+            <button
+                id="micButton"
+                class="mic-button"
+                onclick="startListening()">
+
+                🎤
+                <span>Tap to Speak</span>
+
+            </button>
+
+
+            <!-- Speech recognition status -->
+            <p id="listeningStatus">
+                Ready for your question.
+            </p>
+
+
+            <!-- Recognized question -->
+            <div class="question-display">
+
+                <h3>You asked:</h3>
+
+                <p id="questionText">
+                    Your question will appear here.
+                </p>
+
+            </div>
+
+
+            <!-- Text input backup -->
+            <div class="text-input-area">
+
+                <input
+                    type="text"
+                    id="textQuestion"
+                    placeholder="Or type your question here...">
+
+                <button onclick="submitTypedQuestion()">
+                    Ask
+                </button>
+
+            </div>
+
+
+            <!-- =========================
+                 ANSWER
+            ========================== -->
+
+            <div
+                id="answerArea"
+                class="answer-area hidden">
+
+                <h2>Campus Compass says:</h2>
+
+                <!-- IMPORTANT:
+                     This is the exact text that
+                     will also be spoken aloud.
+                -->
+                <p id="answerText"></p>
+
+
+                <!-- Relevant college image -->
+                <div id="answerImageContainer" class="image-container hidden">
+
+                    <img
+                        id="answerImage"
+                        src=""
+                        alt="College location">
+
+                </div>
+
+
+                <!-- Map -->
+                <div
+                    id="mapContainer"
+                    class="map-container hidden">
+
+                    <h3>📍 Location</h3>
+
+                    <div id="mapContent"></div>
+
+                </div>
+
+
+                <!-- Voice control -->
+                <button
+                    id="speakButton"
+                    onclick="speakAnswer()">
+
+                    🔊 Hear Answer
+
+                </button>
+
+
+                <div class="next-question">
+
+                    <p>
+                        Thank you! 😊 Do you have any more questions?
+                    </p>
+
+                    <button onclick="askAnotherQuestion()">
+                        🎙️ Ask Another Question
+                    </button>
+
+                    <button
+                        class="secondary-button"
+                        onclick="showScreen('glanceScreen')">
+
+                        🏠 Back to Home
+
+                    </button>
+
+                    <button
+                        class="exit-button"
+                        onclick="showScreen('exitScreen')">
+
+                        🚪 Exit Campus Compass
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SCREEN 6 - EXIT / TEAM
+    ========================== -->
+    <section id="exitScreen" class="screen">
+
+        <div class="content-card">
+
+            <h1>Thank You for Exploring Campus Compass!</h1>
+
+            <p class="team-heading">
+                Project Team
+            </p>
+
+            <div class="team-list">
+
+                <p>Harshitha T.V</p>
+                <p>Suma</p>
+                <p>Rime Paul</p>
+                <p>L. Meghana</p>
+                <p>Prathiksha</p>
+
+            </div>
+
+            <p>
+                BCA — 2nd Year, 3rd Semester
+            </p>
+
+            <button onclick="showScreen('thankYouScreen')">
+                Continue
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SCREEN 7 - FINAL THANK YOU
+    ========================== -->
+    <section id="thankYouScreen" class="screen">
+
+        <div class="content-card final-thank-you">
+
+            <h1>THANK YOU! 😊</h1>
+
+            <h2>Campus Compass</h2>
+
+            <p>
+                Your Intelligent Campus Companion
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+{
+  "college": {
+    "name": "Champalal Bhandari Jain College",
+    "shortName": "CB Bhandari Jain College",
+    "established": "June 2000",
+    "affiliatedTo": "Bangalore City University",
+    "address": "H 84, K R Road, Shankarapuram, Bengaluru - 560004, Karnataka, India",
+    "website": "www.cbbandarijaincollege.ac.in",
+    "email": "cbbandarijaincollege@gmail.com",
+    "motto": "Empowering Minds and Nurturing Futures",
+    "vision": "Knowledge Solutions for Youth Empowerment",
+    "mission": "To ensure a conducive learning environment that nurtures the acquisition of relevant skills and instills a winning attitude.",
+    "managedBy": "Shri Mahavir Jain Shikshan Sangh"
+  },
+
+  "leadership": {
+    "president": "Sri Champalal Bhandari",
+    "vicePresident": "Shri G. Hemraj",
+    "secretary": "Sri Champalal Jain",
+    "principal": "Usha Rao",
+    "vicePrincipal": "Shubha Raghavendra",
+    "physicalEducation": "Punith Kumar G"
+},
+
+  "programs": [
+    {
+      "name": "B.Com - Business Data Analytics",
+      "duration": "3 years",
+      "semesters": 6,
+      "fee": "₹60,000"
+    },
+    {
+      "name": "B.Com - Accounting and Finance",
+      "duration": "3 years",
+      "semesters": 6,
+      "fee": "₹60,000"
+    },
+    {
+      "name": "BBA - Entrepreneurship and Business Management",
+      "duration": "3 years",
+      "semesters": 6,
+      "fee": "₹80,000"
+    },
+    {
+      "name": "BCA - Bachelor of Computer Applications",
+      "duration": "3 years",
+      "semesters": 6,
+      "fee": "₹80,000"
+    },
+    {
+      "name": "BCA - Artificial Intelligence and Machine Learning",
+      "duration": "3 years",
+      "semesters": 6,
+      "fee": "₹1,10,000"
+    },
+    {
+      "name": "MBA - Master of Business Administration",
+      "duration": "2 years",
+      "semesters": 4,
+      "fee": "Please contact the college for current fee details."
+    }
+  ],
+
+  "hods": {
+    "bca": "Mithun",
+    "bcom": "Sneha",
+    "bba": "Swapna"
+  },
+
+  "language": {
+    "compulsory": "English",
+    "options": [
+      "Kannada",
+      "Hindi",
+      "Sanskrit"
+    ]
+  },
+
+  "fees": {
+    "paymentRule": "Students are required to pay 50% or 75% initially, depending on the applicable requirement. The full year's payment must be cleared before the final examination.",
+    "concession": "Students with 90% or above may receive a fee concession. The concession depends on the student's circumstances and education-related factors, and the final decision is made by the Principal."
+  },
+
+  "timings": {
+    "regularCollege": "9:30 AM - 3:30 PM",
+    "arrival": "Students should be in college by 9:15 AM.",
+    "prayer": "9:20 AM - 9:25 AM",
+    "sometimesExtends": "3:00 PM - 4:00 PM",
+    "library": "8:30 AM - 4:00 PM",
+    "canteen": "8:30 AM - 4:00 PM",
+    "office": "8:30 AM - 4:00 PM",
+    "workingDays": "Monday to Saturday",
+    "sunday": "Holiday",
+    "saturday": "Classes are from 9:30 AM to 12:30 PM and the college closes at 1:00 PM."
+  },
+
+  "facilities": [
+    "Computer labs",
+    "Individual computers",
+    "Internet and Wi-Fi",
+    "Smart classrooms",
+    "Projectors",
+    "Library",
+    "Seminar hall",
+    "Auditorium",
+    "Sports facilities",
+    "Canteen"
+  ],
+
+  "services": [
+    "ID card",
+    "Bonafide certificate",
+    "Transfer Certificate",
+    "Migration certificate",
+    "Scholarship support",
+    "Exam-related documents",
+    "Fee receipts",
+    "Certificate services",
+    "Student grievance support"
+  ],
+
+  "clubsAndActivities": [
+    "NSS",
+    "NCC",
+    "Cultural clubs",
+    "Sports",
+    "Coding and technical activities",
+    "Digital Cell",
+    "Workshops",
+    "Seminars",
+    "Debates",
+    "Writing competitions",
+    "Logo writing",
+    "Slogan writing",
+    "Presentations",
+    "Freshers' Day",
+    "Talent Hunt",
+    "Karnataka Rajyotsava",
+    "Ganesh festival",
+    "Onam",
+    "Navaratri"
+  ],
+
+  "navigation": {
+    "basement": [
+      "Back entrance for students",
+      "Student parking",
+      "Canteen",
+      "Outdoor boys' washroom",
+      "Stairs",
+      "Security"
+    ],
+    "groundFloor": [
+      "Main entrance",
+      "Inquiry and admission office",
+      "Marketing department",
+      "Lift",
+      "Waiting area",
+      "Reception",
+      "Principal's room",
+      "Puja area",
+      "Fee and certificate office",
+      "Staircase"
+    ],
+    "firstFloor": [
+      "Library",
+      "PU Commerce section"
+    ],
+    "secondFloor": [
+      "Computer lab",
+      "BCA first-year classrooms",
+      "BCA second-year classrooms",
+      "BCA third-year classrooms",
+      "BCA HOD room",
+      "Girls' washroom"
+    ],
+    "thirdFloor": [
+      "B.Com classrooms",
+      "BBA classrooms",
+      "Kannada staff room",
+      "English staff room",
+      "B.Com staff room",
+      "BBA staff room"
+    ],
+    "fourthFloor": [
+      "MBA block",
+      "MBA classrooms",
+      "Gallery room",
+      "Boys' washroom"
+    ],
+    "fifthFloor": [
+      "Main auditorium",
+      "Green room",
+      "Sports-related equipment"
+    ]
+  },
+
+  "specialLocations": {
+    "library": {
+      "floor": "First floor",
+      "description": "The library is on the first floor, on the left side when entering the floor.",
+      "image": "images/library.jpg",
+      "map": "first-floor"
+    },
+    "computerLab": {
+      "floor": "Second floor",
+      "description": "The computer lab is on the second floor.",
+      "image": "images/computer-lab.jpg",
+      "map": "second-floor"
+    },
+    "bcaHod": {
+      "floor": "Second floor",
+      "description": "The BCA HOD room is a small partitioned room within the computer lab.",
+      "map": "second-floor"
+    },
+    "principal": {
+      "floor": "Ground floor",
+      "description": "The Principal's room is on the ground floor, near the reception and puja area.",
+      "map": "ground-floor"
+    },
+    "admissionOffice": {
+      "floor": "Ground floor",
+      "description": "The inquiry and admission office is on the left side after entering through the main entrance.",
+      "map": "ground-floor"
+    },
+    "feeOffice": {
+      "floor": "Ground floor",
+      "description": "The office near the puja area handles fee payment, scholarship applications, transfer certificates and certificate-related services.",
+      "map": "ground-floor"
+    },
+    "canteen": {
+      "floor": "Basement",
+      "description": "The canteen is in the basement near the waiting area and stairs.",
+      "map": "basement"
+    },
+    "parking": {
+      "floor": "Basement",
+      "description": "Student parking is in the basement. The parking area is on the left side near the back entrance.",
+      "map": "basement"
+    },
+    "auditorium": {
+      "floor": "Fifth floor",
+      "description": "The main auditorium is on the fifth floor.",
+      "image": "images/auditorium.jpg",
+      "map": "fifth-floor"
+    },
+    "mba": {
+      "floor": "Fourth floor",
+      "description": "The MBA block and classrooms are on the fourth floor.",
+      "map": "fourth-floor"
+    }
+  },
+
+  "contact": {
+    "phone": [
+      "080 2266 111 924",
+      "416 300 90"
+    ],
+    "email": "cbbandarijaincollege@gmail.com",
+    "website": "www.cbbandarijaincollege.ac.in"
+  }
+}
