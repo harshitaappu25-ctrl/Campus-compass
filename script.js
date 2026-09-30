@@ -245,7 +245,15 @@ function processQuestion(question) {
     const q = normalizeText(question);
 
     console.log("Question:", q);
-
+if (
+    q === "thank you" ||
+    q === "thanks" ||
+    q === "thank you so much" ||
+    q === "thanks a lot"
+) {
+    displayAnswer("You're most welcome! 😊 Is there anything else I can help you with?");
+    return;
+}
 
 if (
 q==    "hi"||
