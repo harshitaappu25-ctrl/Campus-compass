@@ -1108,7 +1108,7 @@ if (
     // PRESIDENT
     // --------------------------------------
 
-    if (
+    if (!q.includes("vice pressident") &&
         containsAny(q, [
             "who is the president",
             "president name",
