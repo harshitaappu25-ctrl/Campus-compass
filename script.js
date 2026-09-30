@@ -290,7 +290,9 @@ if (
         "which sem are you in",
         "which course are you studying",
         "what course are you studying",
-        "who did this project"
+        "who did this project",
+        "who done this project",
+        "project"
     ])
 ) {
     displayAnswer(
