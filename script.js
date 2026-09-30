@@ -979,8 +979,8 @@ if (
         "principal name",
         "name of principal",
         "name of the principal",
-        "who is college principal",
-        "principal"
+        "who is college principal"
+        
     ])
 ) {
     displayAnswer(
@@ -1090,8 +1090,8 @@ if (
             "who is the principal",
             "principal name",
             "name of principal",
-            "who is principal",
-            "principal"
+            "who is principal"
+            
         ])
     ) {
 
