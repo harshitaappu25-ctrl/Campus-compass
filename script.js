@@ -246,6 +246,20 @@ function processQuestion(question) {
 
     console.log("Question:", q);
 
+
+if (containsAny(q, [
+    "hi",
+    "hello",
+    "hey",
+    "good morning",
+    "good afternoon",
+    "good evening",
+    "good night"
+])) {
+    displayAnswer("Hello! Welcome to Campus Compass. How can I help you today?");
+    return;
+}
+    
 // ----------------------------------------
 // PROJECT TEAM / PROJECT INFORMATION
 // ----------------------------------------
