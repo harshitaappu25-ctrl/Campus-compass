@@ -911,7 +911,7 @@ if (
 
 
     
-if (
+if (!q.includes("vice pressident") &&
     containsAny(q, [
         "who is the president",
         "president of the college",
