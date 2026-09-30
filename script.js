@@ -891,23 +891,6 @@ if (
 
 if (
     containsAny(q, [
-        "who is the president",
-        "president of the college",
-        "college president",
-        "name of the president",
-        "president"
-    ])
-) {
-    displayAnswer(
-        `The President is ${collegeData.leadership.president}, an office bearer of Shri Mahavir Jain Shikshan Sangh.`,
-        "images/president.jpg.jpeg"
-    );
-    return;
-}
-
-
-if (
-    containsAny(q, [
         "who is the vice president",
         "vice president of the college",
         "college vice president",
@@ -925,6 +908,26 @@ if (
     );
     return;
 }
+
+
+
+    
+if (
+    containsAny(q, [
+        "who is the president",
+        "president of the college",
+        "college president",
+        "name of the president"
+        
+    ])
+) {
+    displayAnswer(
+        `The President is ${collegeData.leadership.president}, an office bearer of Shri Mahavir Jain Shikshan Sangh.`,
+        "images/president.jpg.jpeg"
+    );
+    return;
+}
+
 
 
 if (
