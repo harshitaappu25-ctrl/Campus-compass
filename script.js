@@ -898,8 +898,7 @@ if (
         "who is vice president",
        "what is the name of the vice president",
 "name of vice president",
-"vice president name",
-"vice president"
+"vice president name"
     ])
 ) {
     displayAnswer(
