@@ -245,7 +245,87 @@ function processQuestion(question) {
     const q = normalizeText(question);
 
     console.log("Question:", q);
-if (
+if (containsAny(q, [
+    "who are the staff of bca department",
+    "who are the staffs of bca department",
+    "bca department staff",
+    "bca teachers",
+    "teachers in bca department",
+    "who teaches bca",
+    "who handles bca department",
+    "staff of bca department",
+    "teachers of bca department"
+])) {
+    displayAnswer(
+        "The BCA department staff members are Mithun, Varshitha, and Priyanka."
+    );
+    return;
+}
+    
+  if (containsAny(q, [
+    "who handles kannada",
+    "who is the kannada teacher",
+    "kannada teacher",
+    "kannada department teacher",
+    "who teaches kannada",
+    "who handles kannada department",
+    "teacher of kannada department"
+])) {
+    displayAnswer(
+        "Kannada is handled by Geetha lakshmi SN."
+    );
+    return;
+}
+
+if (containsAny(q, [
+    "who handles english",
+    "who are the english teachers",
+    "english teachers",
+    "english department teachers",
+    "who teaches english",
+    "who handles english department",
+    "teachers of english department"
+])) {
+    displayAnswer(
+        "The English department is handled by Prabha TV and Jyothi V Kumar."
+    );
+    return;
+}
+
+    if (containsAny(q, [
+    "who handles hindi",
+    "who is the hindi teacher",
+    "hindi teacher",
+    "hindi department teacher",
+    "who teaches hindi",
+    "who handles hindi department",
+    "teacher of hindi department"
+])) {
+    displayAnswer(
+        "Hindi is handled by Dibya Kumari."
+    );
+    return;
+}
+    
+
+if (containsAny(q, [
+    "who handles sanskrit",
+    "who is the sanskrit teacher",
+    "sanskrit teacher",
+    "sanskrit department teacher",
+    "who teaches sanskrit",
+    "who handles sanskrit department",
+    "teacher of sanskrit department"
+])) {
+    displayAnswer(
+        "Sanskrit is handled by Mamatha BJ."
+    );
+    return;
+}
+    
+    
+    
+    if (
     q === "thank you" ||
     q === "thanks" ||
     q === "thank you so much" ||
