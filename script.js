@@ -257,7 +257,7 @@ if (containsAny(q, [
     "teachers of bca department"
 ])) {
     displayAnswer(
-        "The BCA department staff members are Mithun, Varshitha, and Priyanka."
+        "The BCA department staff members are Mithun, Varshitha C, and Priyanka."
     );
     return;
 }
@@ -1085,7 +1085,8 @@ if (
     ])
 ) {
     displayAnswer(
-        `The Vice Principal is ${collegeData.leadership.vicePrincipal}.`
+        `The Vice Principal is ${collegeData.leadership.vicePrincipal}.`,
+        "images/vice principal.jpg.jpeg"
     );
     return;
 }
