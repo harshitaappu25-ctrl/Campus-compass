@@ -441,27 +441,22 @@ if (
 // LIFT LOCATION
 // ----------------------------------------
 
-if (
-    containsAny(q, [
-        "where is the lift",
-        "lift",
-        "where is lift",
-        "where is the elevator",
-        "where can i find the lift",
-        "how do i get to the lift",
-        "which block is the lift in",
-        "lift location",
-        "elevator location"
-    ])
-) {
+if (containsAny(q, [
+    "where is the lift",
+    "lift",
+    "where is lift",
+    "where is the elevator",
+    "where can i find the lift",
+    "how do i get to the lift",
+    "which block is the lift in",
+    "lift location",
+    "elevator location"
+])) {
     displayAnswer(
-        "The lift is located in the ground floor to the right side of the marketing department.",
-        "images/lift.jpg"
+        "The lift is located on the ground floor, to the right side of the Marketing Department."
     );
-
     return;
 }
-
 // ----------------------------------------
 // CANTEEN LOCATION
 // ----------------------------------------
