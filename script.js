@@ -455,7 +455,7 @@ if (
     ])
 ) {
     displayAnswer(
-        "The lift is located in the ground floor to the right side of the marketing depaetment.",
+        "The lift is located in the ground floor to the right side of the marketing department.",
         "images/lift.jpg"
     );
 
