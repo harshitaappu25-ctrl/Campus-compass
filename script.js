@@ -244,8 +244,62 @@ function processQuestion(question) {
 
     const q = normalizeText(question);
 
-    console.log("Question:", q);
+ console.log("Question:", q);
 if (containsAny(q, [
+    "where is the gallery hall",
+    "where is gallery hall",
+    "gallery hall location",
+    "gallery hall",
+    "where is the mini auditorium",
+    "where is mini auditorium",
+    "mini auditorium location",
+    "mini auditorium",
+    "where is the gallery hall and mini auditorium",
+    "where are the gallery hall and mini auditorium"
+])) {
+    displayAnswer(
+        "The Gallery Hall is located on the fourth floor, and the Mini Auditorium is located on the third floor inside the college."
+    );
+    return;
+}
+    
+    if (containsAny(q, [
+    "who are you",
+    "what are you",
+    "what can you help me with",
+    "what can you help me",
+    "how can you help me",
+    "how are you going to help me",
+    "what is your work",
+    "what is your duty",
+    "what is your purpose",
+    "what do you do",
+    "what is your role",
+    "what can you do"
+])) {
+    displayAnswer(
+        "I am Campus Compass, your intelligent campus companion. I can help you find information about the college, departments, staff, courses, facilities, campus locations, and other information available in my system. You can ask me a question by speaking or typing, and I will provide the available information."
+    );
+    return;
+}
+    
+ if (containsAny(q, [
+    "where are the security guards",
+    "where is the security",
+    "security guards",
+    "security",
+    "how many security guards",
+    "security staff",
+    "security personnel",
+    "female security",
+    "female security guard"
+])) {
+    displayAnswer(
+        "The college has security guards on every floor. There are two security guards on the ground floor and one security guard in the basement. Security is also available on the first, second, third, and fourth floors. The college also has a female security guard."
+    );
+    return;
+}   
+    if (containsAny(q, [
     "who are the staff of bca department",
     "who are the staffs of bca department",
     "bca department staff",
@@ -329,7 +383,8 @@ if (containsAny(q, [
     q === "thank you" ||
     q === "thanks" ||
     q === "thank you so much" ||
-    q === "thanks a lot"
+    q === "thanks a lot" ||
+    q === "bye"    
 ) {
     displayAnswer("You're most welcome! 😊 Is there anything else I can help you with?");
     return;
@@ -400,7 +455,7 @@ if (
     ])
 ) {
     displayAnswer(
-        "The lift is located in ______ block.",
+        "The lift is located in the ground floor to the right side of the marketing depaetment.",
         "images/lift.jpg"
     );
 
@@ -470,7 +525,7 @@ if (
     ])
 ) {
     displayAnswer(
-        "The Quadrangle is located inside the college campus.",
+        "The Quadrangle is located on the ground floor inside the college, next to the Marketing department.",
         "images/quadrangle-2.jpg.jpeg"
     );
 
@@ -493,7 +548,7 @@ if (
     ])
 ) {
     displayAnswer(
-        "The Staff Room is located inside the college building.",
+        "The Staff Room is located on the second floor inside the college.",
         "images/staff-room.jpg.jpeg"
     );
 
